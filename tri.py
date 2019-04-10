@@ -15,7 +15,7 @@ def insere(tab,j):
         tab[j-1],tab[j]=tab[j],tab[j-1]
         insere(tab, j-1)
 
-def tri_ins(tab,j=1):
+def tri_ins_recursif(tab,j=1):
     if j<len(tab):
         insere(tab,j)
-        tri_ins(tab,j+1)
+        tri_ins_recursif(tab,j+1)
